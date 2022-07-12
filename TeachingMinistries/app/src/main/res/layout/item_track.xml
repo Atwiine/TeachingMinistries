@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/balance_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/purple_5003"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="40dp">
+
+        <RelativeLayout
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:background="@color/army"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/linear_balance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Attended"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/army"
+                        android:textSize="13sp"
+                        android:id="@+id/tx_attended"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Not attended"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/army"
+                        android:textSize="13sp"
+                        android:id="@+id/tx_notattended"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/army"
+                        android:textSize="13sp"
+                        android:id="@+id/current_teacher"
+                        android:visibility="gone" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Attendance not marked yet"
+                        android:textAlignment="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/army"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:id="@+id/track_attendance"
+                        android:visibility="visible" />
+                    <View
+                        android:layout_width="100dp"
+                        android:layout_height="3dp"
+                        android:layout_gravity="center"
+                        android:background="@color/white"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="Names : "
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:fontFamily="@font/montserrat"
+                        android:text="title"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+                         />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/purple_700"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Phone number : "
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+<!--                            <com.google.android.material.card.MaterialCardView-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                app:cardElevation="10dp"-->
+<!--                                app:cardBackgroundColor="@color/army"-->
+<!--                                >-->
+                            <TextView
+                                android:id="@+id/phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/montserrat"
+                                android:maxLength="100"
+                                android:text="6454343 "
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/check_selected"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/montserrat"
+                                android:maxLength="100"
+                                android:text=""
+                                android:textColor="@color/white"
+                                android:textSize="14sp"
+                                android:visibility="gone" />
+<!--                            </com.google.android.material.card.MaterialCardView>-->
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        >
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/ph_options"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/purple_700"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Phone options"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.card.MaterialCardView>
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/remarks_options"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            app:cardBackgroundColor="@color/purple_700"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_margin="4dp"
+                                android:fontFamily="@font/montserrat"
+                                android:text="Remarks options"
+                                android:textColor="@color/white"
+                                android:textSize="12sp"
+                                android:textStyle="normal" />
+                        </com.google.android.material.card.MaterialCardView>
+                    </LinearLayout>
+
+                    <!--phone and remarks options-->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="0dp"
+                        android:visibility="gone"
+                        android:id="@+id/phone_opts"
+                        app:cardBackgroundColor="@android:color/transparent"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="4dp"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="Call/SMS or Select to send group sms"
+                                    android:layout_gravity="center"
+                                    android:layout_centerHorizontal="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="13sp"
+                                    android:visibility="visible" />
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/ic_baseline_close_24"
+                                    android:layout_alignParentEnd="true"
+                                    android:id="@+id/close_phone"
+                                    />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:orientation="horizontal">
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardElevation="10dp"
+                                    android:id="@+id/phones"
+                                    app:cardBackgroundColor="@color/army"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:maxLength="100"
+                                        android:text="Call"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:gravity="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:visibility="visible"
+                                        android:drawablePadding="5dp"
+                                        app:drawableStartCompat="@drawable/ic_baseline_call_24" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardElevation="10dp"
+                                    android:layout_toEndOf="@id/phones"
+                                    android:id="@+id/sms"
+                                    android:layout_marginStart="5dp"
+                                    app:cardBackgroundColor="@color/army"
+                                    >
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="4dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:maxLength="100"
+                                        android:text="SMS"
+                                        android:paddingStart="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:gravity="center"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp"
+                                        android:visibility="visible"
+                                        android:drawablePadding="5dp"
+                                        app:drawableStartCompat="@drawable/ic_baseline_message_24" />
+                                </com.google.android.material.card.MaterialCardView>
+
+                                <com.google.android.material.card.MaterialCardView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    app:cardElevation="10dp"
+                                    android:layout_alignParentEnd="true"
+                                    app:cardBackgroundColor="@color/army"
+                                    >
+                                    <CheckBox
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="30dp"
+                                        android:id="@+id/check_message"
+                                        android:text="Select"
+                                        android:buttonTint="@color/white"
+                                        android:paddingEnd="10dp"
+                                        android:fontFamily="@font/montserrat"
+                                        android:textColor="@color/white"
+                                        android:textSize="13sp"
+                                        tools:ignore="RtlSymmetry" />
+                                </com.google.android.material.card.MaterialCardView>
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+
+                        <LinearLayout
+                            android:id="@+id/remarks_opts"
+                            android:layout_width="match_parent"
+                            android:visibility="gone"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_close_24"
+                                android:id="@+id/close_remarks"
+                                android:layout_gravity="end"
+                                />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        app:cardCornerRadius="4dp"
+                        app:cardBackgroundColor="@color/purple_500"
+                        app:cardElevation="4dp">
+
+
+
+                        <AutoCompleteTextView
+                            android:id="@+id/student_remarks"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:ellipsize="end"
+                            android:background="@drawable/border_6"
+                            android:freezesText="true"
+                            android:hint="Enter your remarks"
+                            android:imeOptions="actionNext"
+                            android:lines="3"
+                            android:fontFamily="@font/montserrat"
+                            android:maxLength="10000"
+                            android:nextFocusDown="@null"
+                            android:selectAllOnFocus="true"
+                            android:textColorHint="@color/white"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        app:cardElevation="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardBackgroundColor="@color/army"
+                        android:layout_margin="10dp"
+                        android:id="@+id/card_send_remarks"
+                        android:layout_gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Send remarks"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="visible" />
+
+                    </com.google.android.material.card.MaterialCardView>
+                        </LinearLayout>
+                    <!-- end phone and remarks options-->
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/army"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:id="@+id/ennttrr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <View
+                            android:layout_width="140dp"
+                            android:layout_gravity="end"
+                            android:layout_height="1.77dp"
+                            android:background="@color/army"/>
+                        <TextView
+                            android:id="@+id/author"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/montserrat"
+                            android:text="Mark attendance"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="140dp"
+                            android:layout_height="1.77dp"
+                            android:background="@color/army"/>
+
+<!--                        <View-->
+<!--                            android:layout_width="140dp"-->
+<!--                            android:layout_gravity="end"-->
+<!--                            android:layout_height="1.77dp"-->
+<!--                            android:background="@color/army"/>-->
+
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="id"
+                            android:visibility="gone"
+                            android:textColor="@color/purple_700"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/attended"
+                                android:textColor="@color/white"
+                                android:text="Attended"
+                                />
+
+                            <CheckBox
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/missed"
+                                android:layout_marginStart="60dp"
+                                android:layout_gravity="end"
+                                android:textColor="@color/white"
+                                android:text="Missed"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/order"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="gone"
+                        app:cardBackgroundColor="@color/purple_700"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="4dp"
+                            android:fontFamily="@font/montserrat"
+                            android:text="More details"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="5dp"
+            android:layout_height="70dp"
+            android:background="@color/army"
+            android:layout_gravity="end|bottom"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

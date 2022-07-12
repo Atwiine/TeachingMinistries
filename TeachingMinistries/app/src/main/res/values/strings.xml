@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Teaching ministries</string>
+    <string name="save_img">names</string>
+    <string-array name="type_alpha">
+        <item>Select alpha</item>
+        <item>Alpha one</item>
+        <item>Alpha two</item>
+        <item>Alpha three</item>
+    </string-array>
+
+
+</resources>

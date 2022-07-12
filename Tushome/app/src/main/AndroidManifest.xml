@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tushome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:hardwareAccelerated="false"
+        android:theme="@style/Theme.Tushome"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Reader.ReaderNotification"></activity>
+        <activity android:name=".Registrations.Error_account" />
+        <activity android:name=".Registrations.CheckFirst">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Reader.BookDetails" />
+<!--        <activity android:name=".Preferences.SettingsActivity" />-->
+        <activity android:name=".Authors.AuthorActivity" />
+        <activity android:name=".Registrations.first_registration" />
+        <activity android:name=".Registrations.LoginSecond" />
+        <activity android:name=".Authors.UploadBooks" />
+        <activity android:name=".Authors.AuthorsBooks" />
+        <activity android:name=".Authors.OthersBooks" />
+        <activity android:name=".Authors.Requests" />
+        <activity android:name=".Authors.SeeFeedbackBooks" />
+        <activity android:name=".Authors.RealFeedback" />
+        <activity android:name=".Reader.MainActivity" />
+        <activity android:name=".Authors.AuthorBookDetails" />
+        <activity android:name=".MessageOptions.Chat" />
+        <activity android:name=".Authors.OtherBookDetails" />
+        <activity android:name=".Authors.SeeRequestBooks" />
+        <activity android:name=".Preferences.HelpActivity" />
+        <activity android:name=".Preferences.app_information" />
+        <activity android:name=".Preferences.About_us" />
+        <activity android:name=".Registrations.update" />
+        <activity android:name=".Authors.AllRequests" />
+        <activity android:name=".MessageOptions.ChatUsers" />
+        <activity android:name=".MessageOptions.SinglesChat" />
+        <activity android:name=".MessageOptions.SinglesPost" />
+        <activity android:name=".MessageOptions.PostUsers" />
+        <activity android:name=".MessageOptions.GroupPost" />
+        <activity android:name=".MessageOptions.PostComments" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

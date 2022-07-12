@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MessageOptions.Chat">
+
+<!--    <androidx.appcompat.widget.Toolbar-->
+<!--        -->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="?actionBarSize"-->
+<!--        -->
+<!--        android:fitsSystemWindows="true"-->
+<!--        app:contentInsetStart="0dp"-->
+<!--        app:contentInsetStartWithNavigation="0dp"-->
+<!--        app:layout_collapseMode="pin"-->
+<!--        app:popupTheme="@style/ThemeOverlay.MaterialComponents.Light"-->
+<!--        app:titleMarginStart="20dp"-->
+<!--        app:titleTextColor="@color/white">-->
+
+        <RelativeLayout
+            android:background="@color/purple_700"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/mss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:fontFamily="@font/montserrat"
+                android:text="Chat"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+<!--    </androidx.appcompat.widget.Toolbar>-->
+
+    <TextView
+        android:id="@+id/you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="You"
+        android:textColor="@color/teal_700"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/farmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="farmer"
+        android:textColor="@color/teal_700"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/farmer_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/montserrat"
+        android:padding="10dp"
+        android:text="farmer_phone"
+        android:textColor="@color/teal_700"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:outlineSpotShadowColor="@color/purple_700"
+        android:visibility="invisible"></ProgressBar>
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Loading messages..."
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="15sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_settings"
+        android:id="@+id/image_nochat"
+        />
+
+
+    <TextView
+        android:id="@+id/no_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:text="Chat is Empty"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/liwe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/message"
+        android:layout_below="@id/you"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_messages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycle_fmessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:descendantFocusability="afterDescendants"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sending_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:layout_above="@id/message"
+        android:drawablePadding="6dp"
+        android:text="Sending..."
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="13.5sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_sending" />
+    <TextView
+        android:id="@+id/notsending_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:layout_above="@id/message"
+        android:drawablePadding="6dp"
+        android:text="Not sent"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="13.5sp"
+        android:visibility="gone"
+        app:drawableStartCompat="@drawable/ic_not_sent" />
+    <LinearLayout
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_1"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/messageArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:hint="Write a message..."
+            android:inputType="text|textMultiLine|textCapSentences"
+            android:maxLines="10"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/sendButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:padding="4dp"
+            android:src="@drawable/ic_baseline_send_24" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Tushome</string>
+    <string-array name="category">
+        <item>Select your category</item>
+        <item>Author</item>
+        <item>Reader</item>
+    </string-array>
+
+    <string-array name="book_categories">
+        <item>Book categories</item>
+        <item>Fiction</item>
+        <item>Poetry</item>
+        <item>Action and Adventure</item>
+        <item>Classic</item>
+        <item>Childrens books</item>
+        <item>Crime</item>
+        <item>Drama</item>
+        <item>Romance</item>
+    </string-array>
+
+</resources>

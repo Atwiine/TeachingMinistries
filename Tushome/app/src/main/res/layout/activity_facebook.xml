@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+   <!-- tools:context=".Preferences.SettingsActivity"-->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/montserrat"
+            android:text="Facebook"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+
+</RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/wew"
+            android:layout_below="@id/settings_toolbar"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="Scroll down to close settings"
+                android:textAlignment="center"
+                android:textColor="@color/dot_light_screen4"
+                android:textSize="14sp" />
+
+
+
+
+
+        </LinearLayout>
+
+
+    <WebView
+        android:layout_below="@id/wew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/web_facebook"
+        />
+
+</RelativeLayout>

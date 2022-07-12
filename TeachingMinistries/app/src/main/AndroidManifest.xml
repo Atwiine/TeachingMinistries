@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.teachingministries">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tt2"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tt2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alpha"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".Alphas.SendMessage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Alpha">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Alphas.TrackAttendance1"
+            android:exported="false"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Registrations.LoginSecond"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Registrations.update"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Registrations.first_registration"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Alphas.add_students"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Students.PassStudents"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Students.MissedStudents"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Students.Students"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Registrations.Settings"
+            android:theme="@style/Theme.Alpha" />
+        <activity
+            android:name=".Registrations.update_student"
+            android:theme="@style/Theme.Alpha" />
+        <activity android:name=".Alphas.OtherTeachersOptions" />
+        <activity android:name=".Alphas.Graduation" />
+        <activity android:name=".Alphas.BaptisedStudents" />
+        <activity android:name=".Alphas.ToBeBaptised" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+    </application>
+
+</manifest>

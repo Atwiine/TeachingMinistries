@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/bg_home.xml" value="0.124" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/border_settings.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/border_settings2.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_add_circle_24.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.124" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_close_24.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_close_24_black.xml" value="0.124" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.124" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_download_24.xml" value="0.183" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_download_done_24.xml" value="0.183" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_insert_link_24.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.136" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_navigate_next_242.xml" value="0.136" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_track_changes_24.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/drawable/ic_baseline_update_24.xml" value="0.168" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_add_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_baptised_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_first_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_graduation.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_login_second.xml" value="0.18703703703703703" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_missed_students.xml" value="0.33" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_other_teachers_options.xml" value="0.33" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_pass_students.xml" value="0.22" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_send_message.xml" value="0.33" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_settings.xml" value="0.20416666666666666" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_students.xml" value="0.33" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_tobebaptised.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_track_attendance1.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/activity_update.xml" value="0.20416666666666666" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/item_baptised.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/item_students.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/item_to_be_baptised.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/layout/item_track.xml" value="0.25" />
+        <entry key="..\:/android stuff/TeachingMinistries/app/src/main/res/xml/provider_paths.xml" value="0.18703703703703703" />
+        <entry key="..\:/installatons/projects/TeachingMinistries/app/src/main/res/drawable/border_settings.xml" value="0.112" />
+        <entry key="..\:/installatons/projects/TeachingMinistries/app/src/main/res/layout/activity_baptised_students.xml" value="0.1" />
+        <entry key="..\:/project/app/src/main/res/drawable/bg_total.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/from_dates.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/ic_baseline_filter_list_24.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/ic_baseline_get_app_24.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.183" />
+        <entry key="..\:/project/app/src/main/res/drawable/ic_baseline_navigate_next_24.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/drawable/to_dates.xml" value="0.136" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_add_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_baptised_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_bottom.xml" value="0.17916666666666667" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_excel.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_first_registration.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_graduation.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_login_second.xml" value="0.25" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_missed_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_other_teachers_options.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_pass_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_send_message.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_students.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_tobebaptised.xml" value="0.22" />
+        <entry key="..\:/project/app/src/main/res/layout/activity_track_attendance1.xml" value="0.25" />
+        <entry key="..\:/project/app/src/main/res/layout/item_baptised.xml" value="0.20416666666666666" />
+        <entry key="..\:/project/app/src/main/res/layout/item_to_be_baptised.xml" value="0.25" />
+        <entry key="..\:/project/app/src/main/res/layout/item_track.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
